@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    maven {
+        url 'http://nexus.ti/repository/touchin-maven-public/'
+        credentials {
+            username ""
+            password ""
+        }
+    }
+    mavenCentral()
+}
+
+dependencies {
+    compile 'ru.touchin.maven:test-project:1.0'
+}
